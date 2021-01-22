@@ -5,3 +5,4 @@ Booked slot with url https://www.matchi.se/bookingPayment/preConfirm?slotIds=edc
 2019-01-11 - 23:17 - Added slot with date 2019-01-12 and time 06:00 - 07:00
 2019-01-11 - 23:17 - Added slot with date 2019-01-12 and time 07:00 - 08:00
 Booked slot with url https://www.matchi.se/bookingPayment/preConfirm?slotIds=edca8f7c67826cb40167845152c356ba&facilityId=55&start=1547269200000&end=1547272800000&sportIds=1&indoor=true&controllerName=book
+2021-01-22 - 14:50 - Added slot with date 2021-01-22 and time 14:00 - 15:00

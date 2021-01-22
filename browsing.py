@@ -6,7 +6,7 @@ default_user_agent = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_2) AppleWebKi
 
 default_date_format = "%Y-%m-%d"
 default_base_url = "https://www.matchi.se"
-default_schedule_url = "https://www.matchi.se/book/schedule?name=spangatbk&sport=1&indoor=true&facilityId=55&wl="
+default_schedule_url = "https://www.matchi.se/book/schedule?name=pdlcenter&sport=5&indoor=true&facilityId=81&wl="
 default_payment_url = "https://www.matchi.se/bookingPayment/pay"
 available_time_class = "courtLinks"
 
