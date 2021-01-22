@@ -15,6 +15,7 @@ class QueueWorker:
     """
     QueueWorker should be run from terminal
     """
+
     def __init__(self, username, password):
         # matchi credentials needed to book queued slots
         self.browser = browsing.Browser()
@@ -47,15 +48,27 @@ def stop_worker():
     sys.exit(0)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     username = input("Please enter your username: ")
     password = input("Please enter your password: ")
     queueWorker = QueueWorker(username, password)
 
-    scheduler.add_job(queueWorker.purge_expired, "interval", minutes=purging_interval_minutes)
-    print("Purging job started with " + str(purging_interval_minutes) + " minute intervals")
-    scheduler.add_job(queueWorker.try_booking, "interval", minutes=booking_interval_minutes)
-    print("Booking job started with " + str(booking_interval_minutes) + " minute intervals")
+    scheduler.add_job(
+        queueWorker.purge_expired, "interval", minutes=purging_interval_minutes
+    )
+    print(
+        "Purging job started with "
+        + str(purging_interval_minutes)
+        + " minute intervals"
+    )
+    scheduler.add_job(
+        queueWorker.try_booking, "interval", minutes=booking_interval_minutes
+    )
+    print(
+        "Booking job started with "
+        + str(booking_interval_minutes)
+        + " minute intervals"
+    )
     scheduler.start()
 
     # run indefinitely
